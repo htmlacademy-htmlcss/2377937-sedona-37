@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Irina Vasilieva](https://up.htmlacademy.ru/htmlcss/37/user/2377937).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов] (https://htmlacademy.ru/profile/id605037).
 
 ---
 
