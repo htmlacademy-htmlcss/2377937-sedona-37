@@ -5,8 +5,9 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-index">
       <nav class="navigation">
+		 <img class="logo" src="#" alt="седона на главную">
         <ul class="navigation-list">
 
           <li class="navigation-item">
@@ -20,10 +21,12 @@
 
             <ul class="navigation-list navigation-user">
 
+				 <li class="navigation-item">
+              <a class="navigation-link" href="#">
+               <span class="visually-hidden">Поиск</span></a>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-          </a>
+              <span class="visually-hidden">Лайк</span></a>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Лайк</span>
@@ -98,11 +101,39 @@
  <section class="subscription">
   <h2 class="subscription-header">Подпишитесь на рассылку</h2>
    <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form
+    <form class="subscription-form" action="http://echo.htmlacademy.ru" method="post">
+      <p class="subscription-form-email">
+        <label for="subscription-email"></label>
+        <input tupe="text" id="subscription-email" name="subscription-email" placeholder="Ваш email">
+      </p>
+      <button class="subscription-button" tupe="submit">ПОДПИСАТЬСЯ</button>
+    </form>
  </section>
      </main>
-    <footer>
-
+    <footer class="footer-index">
+      <section class="soicial">
+        <ul class="social-list">
+          <li class="soicial-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+          <li class="soicial-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+          <li class="soicial-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademy">
+            <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="phone">
+        <a class="phone-num" href="tel=+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section  class="link">
+        <ul class="link-list">
+          <p class="link-text"><a  class="htmlacademy-link" href="https://htmlacademy.ru/">.htmlacademy</a></p>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>
