@@ -42,10 +42,16 @@ body {
 
 .navigation{
   display: flex;
+  margin: 0 auto;
+  padding: 0px 70px;
+  width: 1200px;
+  height: 64px;
 }
 
 .navigation-list{
   list-style: none;
+  width: 469px;
+  display: inline-flex;
 }
 
 .navigation-link {
@@ -56,7 +62,13 @@ body {
   color:#000000;
   text-decoration: none;
   display: flex;
+  padding: 20px 16px;
 }
+
+.navigation-user{
+  width: 290px;
+  margin-left: auto;
+  }
 
 .nav-button{
   font-size: 16px;
@@ -70,6 +82,7 @@ body {
   border-radius: 4px;
   max-width: 160px;
   word-break: break-all;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
 }
 
 .search-icon{
@@ -86,6 +99,12 @@ body {
   height: 20px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .hero{
@@ -95,10 +114,19 @@ body {
   background-repeat: no-repeat;
 }
 
+/*.hero::after {
+  content: '';
+  background: url("../images/divider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+}*/
+
 .main-image{
   display: block;
   margin: 0 auto;
 }
+
 
 .index-title{
   font-size: 30px;
@@ -120,6 +148,35 @@ body {
 .advantages-list{
   text-align: center;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-item-container{
+  width: 230px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 103px 85px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.advantages-item-wide{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.small-city {
+  display: flex;
+  width: 400px;
+  /*padding: 103px 85px; */
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advantages-title{
@@ -172,12 +229,14 @@ li.advantages-item:nth-child(3){
   text-transform: uppercase;
   max-width: 505px;
   margin: 0 auto;
+  margin-top: 64px;
 }
 
 .services-subtitle{
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  margin-bottom: 64px;
 }
 
 .house-icon{
@@ -330,10 +389,11 @@ li.services-item:nth-child(3){
   display: flex;
 }
 
-.footer-index{
-  padding: 40px 70px 30px 70px;
-  align-items: center;
+.page-footer-container{
   display: flex;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
+  width: 1200px;
   justify-content: center;
 }
 
@@ -359,6 +419,7 @@ li.services-item:nth-child(3){
   align-items: center;
   color:#000000;
   text-decoration: none;
+  padding: 5px 194px 5px 195px;
 }
 
 .header-inner{
@@ -522,6 +583,7 @@ li.services-item:nth-child(3){
 
 .product-list{
   list-style: none;
+  display: flex;
 }
 
 .product-card{
@@ -600,6 +662,8 @@ li.services-item:nth-child(3){
 
 .pagination-list{
   list-style: none;
+  display: flex;
+  gap: 8px;
 }
 
 .pagination-link{
