@@ -38,9 +38,9 @@
     </header>
       <main class="main-inner">
         <div class="page-container">
-        <section class="header-inner filter-image">
+        <section class="header-inner">
             <h1 class="title-inner">Гостиницы Седоны</h1>
-            <ul class="breadcrums">
+            <ul class="breadcrums-list">
                 <li class="breadcrums-item home-icons">
                     <a class="breadcrums-link" href="index.html">
                         <span class="visually-hidden">Главная</span></a>
@@ -101,7 +101,7 @@
              <fieldset class="filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="range-price">
-                    <input class="form-fieldset"
+                    <input class="form-fieldset fieldset-from"
                     type="number"
                     placeholder="цена от"
                     arialable="введите минимальную стоимость"
@@ -109,7 +109,7 @@
                     step="100"
                     >
                     <span class="placeholder">от</span>
-                    <input class="form-fieldset"
+                    <input class="form-fieldset fieldset-to"
                     type="number"
                     placeholder="цена до"
                     arialable="введите максимальную стоимость"
@@ -127,8 +127,10 @@
                         <span class="cost-range grey-line"></span>
                 </div>
               </fieldset>
+              <div class="form-butttons">
                 <button class="button button-submit" type="submit">Применить</button>
                 <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
             </form>
         </section>
         </section>
@@ -145,10 +147,10 @@
                 <button class="view-card" type="button">
                     <span class="visually-hidden ">Показать списком карточки</span>
                 </button>
-                <button class="view-" type="button">
+                <button class="view-list" type="button">
                     <span class="visually-hidden ">Показать списком</span>
                 </button>
-                <ul class="poduct-list">
+                <ul class="product-list">
                  <li class="product-card">
                      <img class="product-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Amara">
                      <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -161,8 +163,6 @@
                       </p>
                       <span class="hotel-raiting">Рейтинг: 8,5</span>
                  </li>
-                </ul>
-                <ul class="poduct-list">
                     <li class="product-card">
                         <img class="product-card-img" src="images/hotel-2.jpg" width="300" height="212" alt="Villas">
                         <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -175,8 +175,6 @@
                         </p>
                          <span class="hotel-raiting">Рейтинг: 9,2</span>
                     </li>
-                   </ul>
-                   <ul class="poduct-list">
                     <li class="product-card">
                         <img class="product-card-img" src="images/hotel-3.jpg" width="300" height="212" alt="Desert">
                         <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -189,8 +187,6 @@
                         </p>
                          <span class="hotel-raiting">Рейтинг: 6,9</span>
                     </li>
-                   </ul>
-                   <ul class="poduct-list">
                     <li class="product-card">
                         <img class="product-card-img" src="images/hotel-4.jpg" width="300" height="212" alt="Green">
                         <h3 class="product-card-title">GreenTree Inn</h3>
