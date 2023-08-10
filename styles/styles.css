@@ -121,7 +121,7 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
+/* Hero*/
 .hero{
   background-image: url("../images/background-welcome.jpg");
   background-color:rgba(84, 136, 154, 0.79);
@@ -176,7 +176,6 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 25px 0 90px 0;
-  max-width: 651px;
 }
 
 .advantages-list{
