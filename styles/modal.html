@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <h2 class="modal-title">поиск гостиницы в седоне</h2>
+    <button class="close-button" type="button"></button>
+    <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+      <div class="modal-form">
+        <label for="arrival">Дата Заезда:</label>
+        <div class="form-input-date">
+          <input type="text" class="modal-input" placeholder="Укажите дату" value="27 апреля 2020" id="'arrival">
+          <span class="error">Мы не можем отправить вас в прошлое.</span>
+        </div>
+      </div>
+      <div class="modal-form-departure">
+        <label for="departure">Дата Выезда:</label>
+        <div class="form-input-date">
+          <input type="text" class="modal-input" placeholder="Укажите дату" value="1 сентября 2023" id="departure">
+          <span class="form-caption">На эти даты есть свободные номера. Пока есть.</span>
+        </div>
+      </div>
+      <div class="form-adult">
+        <label for="adult">Взрослые:</label>
+        <div class="modal-form-input">
+          <button class="form-control minus" type="button"></button>
+          <input type="number" class="modal-input" value="2" id="adult">
+          <button class="form-control plus" type="button"></button>
+        </div>
+      </div>
+      <div class="form-child">
+        <label for="children">Дети:</label>
+          <div class="clue">
+            <button class="clue-button" type="button"></button>
+            <div class="clue-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+          </div>
+        <div class="modal-form-input">
+          <button class="modal-control minus" type="button"></button>
+          <input type="number" class="modal-input" value="2" id="children">
+          <button class="modal-control plus" type="button"></button>
+        </div>
+      </div>
+      <button class=" modal-search-button"
+        type="submit">Найти</button>
+    </form>
+  </body>
+</html>
