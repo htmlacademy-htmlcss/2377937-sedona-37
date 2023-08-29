@@ -443,7 +443,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(84, 136, 154, 0.79);
-  height: 415px;
+  min-height: 415px;
 }
 
 .subscription-title{
@@ -464,6 +464,14 @@ body {
   margin: 0 auto 54px auto;
 }
 
+.subscription-form{
+  width: 684px;
+  min-height: 52px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .subscription-field{
   font-family: "PT Sans",sans-serif;
   font-size: 18px;
@@ -474,6 +482,7 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
 }
+
 
 .subscription-button{
   font-family: "PT Sans",sans-serif;
@@ -487,13 +496,8 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-}
-
-.subscription-form{
-  width: 684px;
-  max-height: 52px;
-  margin: 0 auto;
-  display: flex;
+  word-break: break-all;
+  max-width: 232px;
 }
 
 .footer-container{
@@ -757,7 +761,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  color:#FFFFFF;
+  background-color:#FFFFFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -785,7 +789,7 @@ body {
   right: 0;
 }
 
-.form-butttons{
+.form-buttons{
   max-width: 195px;
   position: relative;
   top: 20px;
