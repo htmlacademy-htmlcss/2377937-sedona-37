@@ -726,11 +726,13 @@ body {
 .modal-form-control.minus {
   left: 10px;
   background-image: url("../images/minus.svg");
+  background-color: #f2f2f2;
 }
 
 .modal-form-control.plus {
   right: 10px;
   background-image: url("../images/plus.svg");
+  background-color: #f2f2f2;
 }
 
 .modal-form-control.minus:hover,
@@ -838,6 +840,7 @@ body {
   color: #FFFFFF;
   font-size: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .modal-button:hover,
@@ -860,9 +863,9 @@ body {
   background-color:rgba(84, 136, 154, 0.79);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 58px 70px;
   color: #FFFFFF;
-  height: 412px;
+  min-height: 412px;
 }
 
 .title-inner{
@@ -937,6 +940,8 @@ body {
   font-weight: 700;
   padding: 0;
   margin: 0 0 32px 0;
+  width: 151px;
+  word-break: break-all;
 }
 
 .catalog-filter-list{
@@ -950,6 +955,8 @@ body {
   line-height: 23px;
   font-weight: 400;
   margin-bottom: 16px;
+  max-width: 142px;
+  word-break: break-all;
 }
 
 .control{
@@ -959,6 +966,7 @@ body {
 
 .control-input{
   margin: 0 16px 0 0;
+  opacity: 0;
 }
 
 .control-mark,
@@ -970,6 +978,17 @@ body {
   border-radius: 4px;
   cursor: pointer;
   left: 0;
+}
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus + .control-mark{
+  outline: 3px solid #83B3D3;
+}
+
+.control:active + .control-mark {
+  opacity: 0.3;
 }
 
 .control-radio{
@@ -994,6 +1013,14 @@ body {
   border-radius: 50%;
   background-color: #3F5E72;
   margin: 5px;
+}
+
+.control-input:focus + .control-radio{
+  outline: 3px solid #83B3D3;
+}
+
+.control:disabled{
+  opacity: 0.1;
 }
 
 .filter-price{
@@ -1033,6 +1060,20 @@ body {
     -webkit-appearance: none;
 }
 
+.form-fieldset:hover{
+  background-color: #E6E6E6;
+}
+
+.form-fieldset:focus{
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.form-fieldset:disabled{
+  background-color: #E6E6E6;
+  opacity: 0.2;
+}
+
 .placeholder{
   color: #000000;
   opacity: 0.3;
@@ -1061,6 +1102,20 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.range-button:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-button:focus{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid  #83B3D3;
+}
+
+.range-button:active{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 2px solid  #83B3D3;
 }
 
 .max-price{
@@ -1118,13 +1173,14 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   background-color: #ffffff00;
-  border: none;
+  border: 3px solid #ffffff00;
   word-break: break-all;
   cursor: pointer;
 }
 
 .button-reset:hover{
   opacity: 0.6;
+  border : 3px solid #ffffff00;
 }
 
 .button-reset:focus{
@@ -1135,7 +1191,7 @@ body {
 
 .button-reset:active{
   color: #FFFFFF4D;
-  border: none;
+  border : 3px solid #ffffff00;
 }
 
 .button-reset:disabled{
@@ -1157,6 +1213,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 350px;
 }
 
 .select-control{
@@ -1171,6 +1228,7 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   color: #333333;
+  background-color: #FFFFFF;
   background-position: right 14px center;
   appearance: none;
   padding: 12px 20px;
@@ -1192,7 +1250,9 @@ body {
 .view-button-list{
   display: flex;
   gap: 8px;
+  max-width: 160px;
   margin-right: 0;
+  flex-wrap: wrap;
 }
 
 .view-button:hover{
@@ -1283,7 +1343,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin: 16px 0 0;
+  margin: 16px 0 0 0;
 }
 
 .product-card-type{
@@ -1396,7 +1456,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 40px auto 0px;
+  margin: 40px auto 0;
   padding: 0;
 }
 
