@@ -42,10 +42,15 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+.content {
+  min-height: calc(100vh - 70px);
+}
+
 .header-index {
   color: #000000;
   background-color: #ffffff;
-  min-height: 64px;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation {
@@ -58,10 +63,7 @@ body {
 }
 
 .navigation-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  margin-bottom: -16px;
   cursor: auto;
 }
 
@@ -75,13 +77,12 @@ body {
   flex-wrap: wrap;
   padding: 0;
   align-items: center;
-  margin: -1px 0 0 168px;
+  margin: -1px 0 0 28px;
   max-width: 470px;
 }
 
 .navigation-item {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
 }
 
@@ -94,6 +95,19 @@ body {
   text-decoration: none;
   display: flex;
   padding: 20px 16px;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  opacity: 0.5;
+}
+
+.navigation-link:active {
+  opacity: 0.1;
+}
+
+.navigation-link:disabled {
+  opacity: 0.1;
 }
 
 .active {
@@ -130,18 +144,6 @@ body {
   padding: 0;
 }
 
-.search-link:hover,
-.favorite-link:hover,
-.search-link:focus,
-.favorite-link:focus {
-  opacity: 0.5;
-}
-
-.search-link:active,
-.favorite-link:active {
-  opacity: 0.1;
-}
-
 .favorite {
   font-size: 10px;
   line-height: 10px;
@@ -174,16 +176,12 @@ body {
   padding: 8px 33px;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .hero {
   background-image: url("../images/background-welcome.jpg");
   background-color:rgba(84, 136, 154, 0.79);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 485px;
+  min-height: 485px;
   display: flex;
   position: relative;
 }
@@ -203,7 +201,7 @@ body {
 .main-image {
   margin: 0 auto;
   box-sizing: content-box;
-  padding-top: 51px;
+  padding: 51px;
 }
 
 .img {
@@ -351,20 +349,20 @@ body {
   padding: 184px 85px 80px;
   }
 
-.services-item:first-child {
+.house {
   background-image: url("../images/hotels.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
   background-color: #83B3D31F;
   }
 
-.services-item:nth-child(2) {
+.food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
   background-position: center 82px;
   }
 
-.services-item:last-child {
+.souvenirs {
   background-image: url("../images/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: center 79px;
@@ -478,6 +476,22 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.subscription-field:hover {
+  color: #0000004d;
+  background-color: #e6e6e6;
+  outline: 3px inherit;
+}
+
+.subscription-field:focus {
+  color: #0000004d;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.subscription-field:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
 
 .subscription-button {
   font-family: "PT Sans",sans-serif;
@@ -498,7 +512,7 @@ body {
 .footer-container {
   display: flex;
   margin: 40px auto 30px auto;
-  min-height: 50px;
+  height: 50px;
   width: 1060px;
   align-items: center;
   justify-content: space-between;
@@ -514,15 +528,16 @@ body {
 .social-link {
   text-decoration: none;
   padding: 8px 13px;
+  fill: #83b3d3;
 }
 
-.social-link svg path:hover,
-.social-link svg path:focus {
-  fill: #68A2CA;
+.social-link:hover,
+.social-link:focus {
+  fill: #68a2ca;
 }
 
-.social-link svg path:active {
-  fill: #68A2CA4D;
+.social-link:active {
+  fill: #68a2ca4d;
 }
 
 .phone-num {
@@ -546,15 +561,16 @@ body {
 
 .htmlacademy-link {
   text-decoration: none;
+  display: block;
 }
 
-.htmlacademy-link svg path:hover,
-.htmlacademy-link svg path:focus {
+.htmlacademy-link:hover,
+.htmlacademy-link:focus {
   fill: #756157;
 }
 
-.htmlacademy-link svg path:active {
-  fill: #7561574d;
+.htmlacademy-link:active {
+  fill: #7561574d
 }
 
 .modal-container {
@@ -684,6 +700,11 @@ body {
 .modal-form-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+}
+
+.modal-form-input:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-form-input:invalid {
@@ -887,6 +908,7 @@ body {
   padding: 0;
   position: relative;
   margin-right: 28px;
+  right: 4px;
 }
 
 .breadcrums-item:not(:first-child)::before {
@@ -905,6 +927,23 @@ body {
   width: 13px;
   height: 15px;
   background-repeat: no-repeat;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+}
+
+.breadcrums-item:hover,
+.breadcrums-item:focus {
+  opacity: 0.5;
+}
+
+.breadcrums-item:active {
+  opacity: 0.1;
+}
+
+.breadcrums-item:disabled {
+  opacity: 0.1;
 }
 
 .breadcrums-link {
@@ -1014,7 +1053,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.control:disabled {
+.control-input:disabled {
   opacity: 0.1;
 }
 
@@ -1043,7 +1082,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   width: 143px;
-  padding: 12px 38px 12px 20px;
+  padding: 12px 40px 12px 20px;
   border: none;
   background-color: #f2f2f2;
   appearance: none;
@@ -1111,6 +1150,10 @@ body {
 .range-button:active {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   outline: 2px solid  #83b3d3;
+}
+
+.range-button:disabled {
+  opacity: 0.2;
 }
 
 .max-price {
@@ -1260,6 +1303,10 @@ body {
 
 .view-button:active {
   border-color: #000000;
+}
+
+.view-button:disabled {
+  opacity: 0.2;
 }
 
 .view-table {
@@ -1487,16 +1534,36 @@ body {
   background-color: #f2f2f2;
 }
 
-.pagination-more {
+.pagination-link-more {
   font-size: 22px;
-  line-height: 26px;
   font-weight: 400;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
-  border: none;
-  width: 60px;
+  text-transform: uppercase;
+  min-width: 60px;
   height: 60px;
-  display: table;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-link-more:hover,
+.pagination-link-more:focus {
+  opacity: 0.5;
+}
+
+.pagination-link-more:active {
+  opacity: 0.3;
+  background-color: #e5e5e5;
+}
+
+.pagination-link-more:disabled {
+  opacity: 0.1;
 }
 
 .catalog-color {
@@ -1528,7 +1595,7 @@ body {
 
 .subscription-button:active,
 .button-submit:active {
-  background-color:#82b3d3;
+  background-color: #82b3d3;
   color: #ffffff4d;
 }
 
