@@ -702,6 +702,10 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.modal-form-input:active {
+  background-color: #e6e6e6;
+}
+
 .modal-form-input:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
@@ -895,7 +899,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 8px 0 40px 0;
+  margin: 3px 0 41px 0;
 }
 
 .breadcrums-item {
@@ -923,32 +927,35 @@ body {
 }
 
 .home-icon {
-  background-image: url("../images/breadcrumbs-home.svg");
-  width: 13px;
-  height: 15px;
-  background-repeat: no-repeat;
-  padding: 10px;
   position: relative;
-  cursor: pointer;
-  background-position: center;
+  top: 6px;
+  left: -1px;
 }
 
-.breadcrums-item:hover,
-.breadcrums-item:focus {
-  opacity: 0.5;
-}
-
-.breadcrums-item:active {
-  opacity: 0.1;
-}
-
-.breadcrums-item:disabled {
-  opacity: 0.1;
+.home-icom:hover,
+.home-icom:focus {
+  color: #ffffff99;
 }
 
 .breadcrums-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.breadcrums-link:hover{
+  color: #ffffff99;
+}
+
+.breadcrums-link:focus {
+  color: #ffffff;
+}
+
+.breadcrums-link:active {
+  color: #ffffff4d;
+}
+
+.breadcrums-link:disabled {
+  opacity: 0.1;
 }
 
 .form-filter {
@@ -973,7 +980,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   padding: 0;
-  margin: 0 0 32px 0;
+  margin: 0 0 33px 0;
   width: 151px;
   word-break: break-all;
 }
