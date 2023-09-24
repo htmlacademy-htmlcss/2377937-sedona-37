@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -483,7 +483,7 @@ body {
 }
 
 .subscription-field {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
@@ -513,7 +513,7 @@ body {
 }
 
 .subscription-button {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1216,7 +1216,7 @@ body {
 }
 
 .button-submit {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -1232,7 +1232,7 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -1285,7 +1285,7 @@ body {
 }
 
 .select-control {
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
